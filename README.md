@@ -1,4 +1,4 @@
-# Auto_Postgre_for_Mattermost
+# Auto_PostgreSQL_for_Mattermost
 PostgreSQL script to perform fastest installation of Mattermost 
 
 
