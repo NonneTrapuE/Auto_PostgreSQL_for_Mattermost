@@ -12,11 +12,19 @@ For execute script, please use sudo.
 You need to create or move script in directory with corrects permissions.
 For example: 
 
-``` mv mattermost_auto.sh /tmp ```
+``` mv auto_postgres.sh /tmp ```
 
 
 To execute script : 
 
-``` chmod u+x mattermost_auto.sh ```
+``` chmod u+x auto_postgres.sh ```
 
-``` sudo ./mattermost_auto.sh ```
+``` sudo ./auto_postgres.sh ```
+
+# To install Mattermost in other server
+
+To install Mattermost in other server, final step open firewalld service port. If you answer "no", but you want to install Mattermost in other server, open firewalld manually.
+
+``` sudo firewall-cmd --add-service=postegresql --permanent ```
+
+``` sudo firewall-cmd --complete-reload ```
